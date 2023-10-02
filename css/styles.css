@@ -15,16 +15,22 @@
 #Head-logo {
   background-color: rgb(27, 99, 222);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   min-height: 100px;
   width: 100%;
 }
 
 header div {
   width: calc(100% / 3);
+  text-align: center;
 }
 
 header li {
+  margin-right: 0.5rem;
+}
+
+header ul {
   display: none;
 }
 
@@ -36,11 +42,47 @@ header li {
   display: none;
 }
 
+#bar {
+  font-size: 2rem;
+  color: white;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  width: 6rem;
+  border-radius: 25%;
+  height: 2rem;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  #Head-logo {
+    justify-content: space-around;
+  }
+
+  header li {
+    display: inline-block;
+    color: white;
+  }
+
+  #bar {
+    display: none;
+  }
+
+  header ul {
+    display: contents;
+  }
+}
+
 /* demo downloaded */
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .col {
@@ -54,8 +96,4 @@ header li {
 .Leader {
   min-height: 30rem;
   border-radius: 15%;
-}
-
-.container {
-  padding: 2rem;
 }
