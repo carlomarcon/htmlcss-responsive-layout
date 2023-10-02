@@ -9,7 +9,9 @@
 .Leader {
   min-height: 30rem;
   border-radius: 15%;
+  position: relative;
 }
+
 /* header */
 
 #Head-logo {
@@ -58,7 +60,7 @@ header ul {
   padding-top: 5px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #Head-logo {
     justify-content: space-around;
   }
@@ -91,9 +93,43 @@ header ul {
   background-color: rgb(145, 175, 223);
   border-radius: 30%;
   gap: 1rem;
+  padding: 2rem;
+  font-size: 0.8rem;
 }
 
 .Leader {
   min-height: 30rem;
   border-radius: 15%;
+  display: flex;
+}
+
+.img-iphone {
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* responsive */
+
+@media screen and (min-width: 768px) {
+  .col {
+    width: calc(100% / 3);
+  }
+
+  .Leader {
+    width: 66%;
+  }
+
+  .img-iphone {
+    width: 50%;
+    height: 55%;
+    bottom: 0;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
 }
