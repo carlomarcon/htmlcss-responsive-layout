@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+
+.Leader {
+  min-height: 30rem;
+  border-radius: 15%;
+}
+/* header */
+
+#Head-logo {
+  background-color: rgb(27, 99, 222);
+  display: flex;
+  justify-content: space-around;
+  min-height: 100px;
+  width: 100%;
+}
+
+header div {
+  width: calc(100% / 3);
+}
+
+header li {
+  display: none;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+/* demo downloaded */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+  min-height: 20rem;
+  background-color: rgb(145, 175, 223);
+  border-radius: 30%;
+  gap: 1rem;
+}
+
+.Leader {
+  min-height: 30rem;
+  border-radius: 15%;
+}
+
+.container {
+  padding: 2rem;
+}
