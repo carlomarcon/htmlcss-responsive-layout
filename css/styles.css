@@ -82,14 +82,14 @@ header ul {
 /* demo downloaded */
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
   padding: 2rem;
+  min-height: 400px;
+  width: 100%;
 }
 
 .col {
   width: 100%;
-  min-height: 20rem;
+  min-height: 14rem;
   background-color: rgb(145, 175, 223);
   border-radius: 30%;
   gap: 1rem;
@@ -98,9 +98,9 @@ header ul {
 }
 
 .Leader {
-  min-height: 30rem;
+  min-height: 20rem;
   border-radius: 15%;
-  display: flex;
+  padding: 3rem;
 }
 
 .img-iphone {
@@ -115,6 +115,11 @@ header ul {
 /* responsive */
 
 @media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .col {
     width: calc(100% / 3);
   }
@@ -125,11 +130,96 @@ header ul {
 
   .img-iphone {
     width: 50%;
-    height: 55%;
+    height: 50%;
     bottom: 0;
     left: 30%;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .img-iphone {
+    left: 68%;
+    height: 65%;
+  }
+
+  .col {
+    padding: 4rem;
+  }
+  .Leader {
+    padding-right: 23rem;
+  }
+}
+
+/* purposes */
+
+.container-purposes {
+  min-height: 600px;
+  background-color: rgb(123, 65, 224);
+  padding: 1rem;
+}
+
+.Planning-img {
+  width: 100%;
+}
+
+.Development-img {
+  width: 100%;
+
+  border-radius: 20%;
+  min-height: 30rem;
+}
+
+.app-development {
+  background-color: white;
+  color: black;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 922px) {
+  .container-purposes {
+    display: flex;
+    padding: 10rem;
+    gap: 2rem;
+  }
+
+  .app-development {
+    display: inline-block;
+    margin-top: 9rem;
+    width: 100%;
+  }
+}
+
+/* testimonials */
+
+.container-testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.col-testimonials {
+  width: 100%;
+  background-color: rgb(123, 65, 224);
+  min-height: 30rem;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+#Team img {
+  width: 70%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.Explanation {
+  background-color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 922px) {
 }
