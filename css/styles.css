@@ -8,7 +8,7 @@
 
 .Leader {
   min-height: 30rem;
-  border-radius: 15%;
+  border-radius: 60px;
   position: relative;
 }
 
@@ -46,7 +46,7 @@ header ul {
   color: black;
   display: inline-block;
   width: 6rem;
-  border-radius: 25%;
+  border-radius: 60px;
   height: 2rem;
   vertical-align: middle;
   padding-top: 5px;
@@ -87,7 +87,7 @@ header ul {
   width: 100%;
   min-height: 14rem;
   background-color: rgb(145, 175, 223);
-  border-radius: 30%;
+  border-radius: 40px;
   gap: 1rem;
   padding: 2rem;
   font-size: 0.8rem;
@@ -95,12 +95,12 @@ header ul {
 
 .Leader {
   min-height: 20rem;
-  border-radius: 15%;
+  border-radius: 40px;
   padding: 3rem;
 }
 
 .img-iphone {
-  width: 60%;
+  width: 40%;
   height: 40%;
   position: absolute;
   bottom: 0;
@@ -160,15 +160,14 @@ header ul {
 
 .Development-img {
   width: 100%;
-
-  border-radius: 20%;
+  border-radius: 50px;
   min-height: 30rem;
 }
 
 .app-development {
   background-color: white;
   color: black;
-  border-radius: 3rem;
+  border-radius: 30px;
   padding: 1rem;
 }
 
@@ -215,6 +214,22 @@ header ul {
 }
 
 @media screen and (min-width: 768px) {
+  #Team img {
+    width: 250px;
+    height: 250px;
+    float: left;
+  }
+  .col-testimonials {
+    padding: 3rem;
+  }
+
+  #Team p {
+    margin-top: 2rem;
+  }
+
+  .Explanation {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 922px) {
