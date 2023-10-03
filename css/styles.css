@@ -36,14 +36,6 @@ header ul {
   display: none;
 }
 
-.button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
-  display: none;
-}
-
 #bar {
   font-size: 2rem;
   color: white;
@@ -85,6 +77,10 @@ header ul {
   padding: 2rem;
   min-height: 400px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .col {
@@ -121,11 +117,11 @@ header ul {
   }
 
   .col {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 2rem / 3);
   }
 
   .Leader {
-    width: 66%;
+    width: calc((100% / 3 - 2rem / 3) * 2);
   }
 
   .img-iphone {
@@ -154,7 +150,7 @@ header ul {
 
 .container-purposes {
   min-height: 600px;
-  background-color: rgb(123, 65, 224);
+  background-color: #9792e4;
   padding: 1rem;
 }
 
@@ -196,20 +192,20 @@ header ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+  padding: 8rem;
 }
 
 .col-testimonials {
   width: 100%;
-  background-color: rgb(123, 65, 224);
-  min-height: 30rem;
+  background-color: #9792e4;
+  min-height: 22rem;
   border-radius: 3rem;
   text-align: center;
 }
 
 #Team img {
-  width: 70%;
-  height: 60%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
