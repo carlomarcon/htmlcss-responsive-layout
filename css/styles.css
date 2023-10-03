@@ -12,6 +12,19 @@
   position: relative;
 }
 
+.col {
+  width: 100%;
+  min-height: 14rem;
+  border-radius: 20px;
+  gap: 1rem;
+  padding: 2rem;
+  font-size: 0.8rem;
+}
+
+.color-white {
+  background-color: white;
+}
+
 /* header */
 
 #Head-logo {
@@ -83,11 +96,11 @@ header ul {
   gap: 1rem;
 }
 
-.col {
+.col-demo {
   width: 100%;
   min-height: 14rem;
-  background-color: rgb(145, 175, 223);
-  border-radius: 40px;
+  background-color: #b5ddff;
+  border-radius: 20px;
   gap: 1rem;
   padding: 2rem;
   font-size: 0.8rem;
@@ -116,7 +129,7 @@ header ul {
     flex-wrap: wrap;
   }
 
-  .col {
+  .col-demo {
     width: calc(100% / 3 - 2rem / 3);
   }
 
@@ -191,7 +204,7 @@ header ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 8rem;
+  padding: 4rem;
 }
 
 .col-testimonials {
@@ -224,7 +237,7 @@ header ul {
   }
 
   #Team p {
-    margin-top: 2rem;
+    margin-top: rem;
   }
 
   .Explanation {
@@ -233,4 +246,30 @@ header ul {
 }
 
 @media screen and (min-width: 922px) {
+}
+
+/* benefits */
+
+.container-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #9792e4;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+#Benefits h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .col {
+    width: calc(100% / 2 - 0.5rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col {
+    width: calc(100% / 3 - 2rem / 3);
+  }
 }
